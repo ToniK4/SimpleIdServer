@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "SimpleIdServer.Scim.Startup": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:60002/swagger/index.html",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:60002;http://localhost:52058"
+    }
+  }
+}

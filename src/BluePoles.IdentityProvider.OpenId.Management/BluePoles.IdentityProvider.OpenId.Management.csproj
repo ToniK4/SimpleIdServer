@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>83c34a3c-0322-4fc0-87ab-d9a6622dc52f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="108.0.2" />
+    <PackageReference Include="SimpleIdServer.OpenID" Version="2.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SimpleIdServer\src\OpenID\SimpleIdServer.OpenID.EF\SimpleIdServer.OpenID.EF.csproj" />
+    <ProjectReference Include="..\..\..\SimpleIdServer\src\OpenID\SimpleIdServer.OpenID\SimpleIdServer.OpenID.csproj" />
+  </ItemGroup>
+
+</Project>
