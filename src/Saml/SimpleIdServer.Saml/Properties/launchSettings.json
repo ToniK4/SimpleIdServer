@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SimpleIdServer.Saml": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:65197;http://localhost:65198"
+    }
+  }
+}

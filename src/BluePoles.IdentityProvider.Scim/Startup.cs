@@ -80,17 +80,17 @@ namespace BluePoles.IdentityProvider.Scim
             {
                 _.IgnoreUnsupportedCanonicalValues = false;
             }
-            //, massTransitOptions: x =>
-            //{
-            //    x.UsingRabbitMq((c, t) =>
-            //    {
-            //        var connectionString = Configuration["RabbitMQ"];
-            //        if (!string.IsNullOrWhiteSpace(connectionString))
-            //        {
-            //            t.Host(connectionString);
-            //        }
-            //    });
-            //}
+            , massTransitOptions: x =>
+            {
+                x.UsingRabbitMq((c, t) =>
+                {
+                    var connectionString = Configuration["RabbitMQ"];
+                    if (!string.IsNullOrWhiteSpace(connectionString))
+                    {
+                        t.Host(connectionString);
+                    }
+                });
+            }
             );
             services.AddScimStoreEF(options =>
             {

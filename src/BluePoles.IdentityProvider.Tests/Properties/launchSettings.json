@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "BluePoles.IdentityProvider.Tests": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:65195;http://localhost:65196"
+    }
+  }
+}

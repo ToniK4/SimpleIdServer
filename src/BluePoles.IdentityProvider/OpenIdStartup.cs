@@ -99,17 +99,17 @@ namespace BluePoles.IdentityProvider
                         SIDOpenIdConstants.StandardScopes.OfflineAccessScope.Name
                     };
                 }
-                //, massTransitOptions: opt =>
-                //{
-                //    opt.UsingRabbitMq((c, t) =>
-                //    {
-                //        var connectionString = _configuration["RabbitMQ"];
-                //        if (!string.IsNullOrWhiteSpace(connectionString))
-                //        {
-                //            t.Host(connectionString);
-                //        }
-                //    });
-                //}
+                , massTransitOptions: opt =>
+                {
+                    opt.UsingRabbitMq((c, t) =>
+                    {
+                        var connectionString = _configuration["RabbitMQ"];
+                        if (!string.IsNullOrWhiteSpace(connectionString))
+                        {
+                            t.Host(connectionString);
+                        }
+                    });
+                }
                 )
                 .AddOpenIDEF(opt =>
                 {

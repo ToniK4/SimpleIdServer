@@ -1,5 +1,4 @@
 ﻿using MassTransit;
-using MassTransit.ExtensionsDependencyInjectionIntegration;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http.Features;
@@ -58,7 +57,7 @@ namespace BluePoles.IdentityProvider
         public static SimpleIdServerOpenIDBuilder AddCustomApi(this IServiceCollection services,
             Action<OpenIDHostOptions> openidOptions = null,
             Action<OAuthHostOptions> oauthOptions = null,
-            Action<IServiceCollectionBusConfigurator> massTransitOptions = null)
+            Action<IBusRegistrationConfigurator> massTransitOptions = null)
         {
             var builder = new SimpleIdServerOpenIDBuilder(services);
             services.AddSIDOAuth();
@@ -94,10 +93,10 @@ namespace BluePoles.IdentityProvider
                 services.Configure<OAuthHostOptions>((opt) => { });
             }
 
-            //services.AddMassTransit(massTransitOptions != null ? massTransitOptions : (o) =>
-            //{
-            //    o.UsingInMemory();
-            //});
+            services.AddMassTransit(massTransitOptions != null ? massTransitOptions : (o) =>
+            {
+                o.UsingInMemory();
+            });
             return builder;
         }
 

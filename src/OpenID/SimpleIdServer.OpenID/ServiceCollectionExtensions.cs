@@ -1,7 +1,6 @@
 ﻿// Copyright (c) SimpleIdServer. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 using MassTransit;
-using MassTransit.ExtensionsDependencyInjectionIntegration;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http.Features;
@@ -59,7 +58,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static SimpleIdServerOpenIDBuilder AddSIDOpenID(this IServiceCollection services,
             Action<OpenIDHostOptions> openidOptions = null,
             Action<OAuthHostOptions> oauthOptions = null,
-            Action<IServiceCollectionBusConfigurator> massTransitOptions = null)
+            Action<IBusRegistrationConfigurator> massTransitOptions = null)
         {
             var builder = new SimpleIdServerOpenIDBuilder(services);
             services.AddSIDOAuth();

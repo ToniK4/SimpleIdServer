@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SimpleIdServer.UI.Authenticate.LoginPassword": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:65190;http://localhost:65191"
+    }
+  }
+}
