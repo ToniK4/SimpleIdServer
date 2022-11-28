@@ -37,11 +37,6 @@ namespace BluePoles.IdentityProvider.OpenId.Management
         }
 
 
-        //I'm referencing SimpleIDServer's SortOrders enum here, should I do that?
-
-
-
-
         //Pogledaj switch
 
         /// <summary>
@@ -103,6 +98,13 @@ namespace BluePoles.IdentityProvider.OpenId.Management
             request.AddJsonBody(client);
             var response = await Client.PutAsync(request);
             var nesto = response;
+            return response.StatusCode;
+        }
+        public async Task<HttpStatusCode> DeleteClient(string name)
+        {
+            var request = new RestRequest($"management/Clients/{name}", Method.Delete);
+
+            var response = await Client.DeleteAsync(request);
             return response.StatusCode;
         }
 
