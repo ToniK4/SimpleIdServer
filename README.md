@@ -11,7 +11,9 @@ https://github.com/simpleidserver/CaseManagement
 
 # Scim rfc's
 https://www.rfc-editor.org/rfc/rfc7642.html
+
 https://www.rfc-editor.org/rfc/rfc7643.html
+
 https://www.rfc-editor.org/rfc/rfc7644.html
 
 # Local files
