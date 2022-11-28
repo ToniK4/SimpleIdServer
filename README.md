@@ -19,7 +19,7 @@ If you want to learn more about creating good readme files then refer the follow
 - [Visual Studio Code](https://github.com/Microsoft/vscode)
 - [Chakra Core](https://github.com/Microsoft/ChakraCore)
 
-#SimpleIdServer links
+# SimpleIdServer links
 
 SimpleIdServer
 https://github.com/simpleidserver/SimpleIdServer
@@ -27,15 +27,15 @@ https://github.com/simpleidserver/SimpleIdServer
 CaseManagement - BPMN and HumanTask engine
 https://github.com/simpleidserver/CaseManagement
 
-#OAuth rfc
+# OAuth rfc
 
 
-#Scim rfc's
+# Scim rfc's
 https://www.rfc-editor.org/rfc/rfc7642.html
 https://www.rfc-editor.org/rfc/rfc7643.html
 https://www.rfc-editor.org/rfc/rfc7644.html
 
-#Local files
+# Local files
 To debug, you can switch the nuget packages for the local files.
 (A folder named SimpleIdServer with the full cloned repository https://github.com/simpleidserver/SimpleIdServer.git should be located in the same directory as BluePoles.IdentityProvider)
 To do this Launch the BluePoles.IdentityProvider_LocalFiles solution and change SimpleIdServer.OpenID.SqlServer.Startup by commenting out these nuget packages: 
