@@ -24,3 +24,6 @@ Action of type IServiceCollectionBusConfigurator needs to be replaced with Actio
 
 # Running the project and Tests
 Running both the IdentityProvider and Scim project should allow you to run all of the tests.
+
+# Startup problems
+If there are SQL query problems when starting either the SCIM or Identity Provider project, remaking the database usually helps.
